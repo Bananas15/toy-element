@@ -30,13 +30,14 @@
     "postcss-nested": "^6.2.0",
     "typescript": "^5.8.3",
     "vite": "^5.4.19",
-    "vitest": "^1.6.1",
+    "vitest": "^3.2.4",
     "vue-tsc": "^1.8.27"
   },
   "dependencies": {
     "lodash-es": "^4.17.21",
     "vue": "^3.5.17",
     "toy-element": "workspace:*",
+    "@vitest/coverage-v8": "^3.2.4",
     "@toy-element/hooks": "workspace:*",
     "@toy-element/utils": "workspace:*",
     "@toy-element/theme": "workspace:*"
