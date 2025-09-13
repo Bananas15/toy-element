@@ -10,3 +10,4 @@ const installer = makeInstaller(components);
 
 export * from "../components";
 export default installer;
+// 新功能
