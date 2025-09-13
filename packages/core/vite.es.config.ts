@@ -24,6 +24,8 @@ export default defineConfig({
   ],
   build: {
     outDir: "dist/es",
+    minify: false,
+    cssCodeSplit: true,
     lib: {
       entry: resolve(__dirname, "index.ts"),
       name: "ToyElement",
@@ -56,11 +58,11 @@ export default defineConfig({
             return "utils";
           }
 
-          // for (const dirName of getDirectoriesSync("../components")) {
-          //   if (id.includes(`/packages/components/${dirName}`)) {
-          //     return dirName;
-          //   }
-          // }
+          for (const dirName of getDirectoriesSync("../components")) {
+            if (id.includes(`/packages/components/${dirName}`)) {
+              return dirName;
+            }
+          }
         },
       },
     },
